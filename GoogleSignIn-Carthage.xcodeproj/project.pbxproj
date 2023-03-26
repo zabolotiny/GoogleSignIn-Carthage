@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5BCF4B4529D04D5200067693 /* GoogleSignIn_Carthage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BCF4B4429D04D5200067693 /* GoogleSignIn_Carthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		960A88C6910879DD78192F0C /* Pods_GoogleSignIn_Carthage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3296DC4735387634B7C4D76A /* Pods_GoogleSignIn_Carthage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3296DC4735387634B7C4D76A /* Pods_GoogleSignIn_Carthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleSignIn_Carthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CB11E659922BA8D3859E95 /* Pods-GoogleSignIn-Carthage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSignIn-Carthage.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage.debug.xcconfig"; sourceTree = "<group>"; };
 		5BCF4B4129D04D5200067693 /* GoogleSignIn_Carthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleSignIn_Carthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCF4B4429D04D5200067693 /* GoogleSignIn_Carthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleSignIn_Carthage.h; sourceTree = "<group>"; };
+		B221D0279E38B02B31C956A9 /* Pods-GoogleSignIn-Carthage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSignIn-Carthage.release.xcconfig"; path = "Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +24,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960A88C6910879DD78192F0C /* Pods_GoogleSignIn_Carthage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +36,8 @@
 			children = (
 				5BCF4B4329D04D5200067693 /* GoogleSignIn-Carthage */,
 				5BCF4B4229D04D5200067693 /* Products */,
+				E007406C482E93CA04B0558B /* Pods */,
+				FB4B4ED0DF585A65E108EE4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +55,24 @@
 				5BCF4B4429D04D5200067693 /* GoogleSignIn_Carthage.h */,
 			);
 			path = "GoogleSignIn-Carthage";
+			sourceTree = "<group>";
+		};
+		E007406C482E93CA04B0558B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44CB11E659922BA8D3859E95 /* Pods-GoogleSignIn-Carthage.debug.xcconfig */,
+				B221D0279E38B02B31C956A9 /* Pods-GoogleSignIn-Carthage.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB4B4ED0DF585A65E108EE4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3296DC4735387634B7C4D76A /* Pods_GoogleSignIn_Carthage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,10 +93,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BCF4B4829D04D5200067693 /* Build configuration list for PBXNativeTarget "GoogleSignIn-Carthage" */;
 			buildPhases = (
+				F349428508DB17B6FED5B833 /* [CP] Check Pods Manifest.lock */,
 				5BCF4B3C29D04D5200067693 /* Headers */,
 				5BCF4B3D29D04D5200067693 /* Sources */,
 				5BCF4B3E29D04D5200067693 /* Frameworks */,
 				5BCF4B3F29D04D5200067693 /* Resources */,
+				5856808112674CCD56D96F26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,7 +124,7 @@
 				};
 			};
 			buildConfigurationList = 5BCF4B3B29D04D5200067693 /* Build configuration list for PBXProject "GoogleSignIn-Carthage" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -123,6 +150,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5856808112674CCD56D96F26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F349428508DB17B6FED5B833 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoogleSignIn-Carthage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BCF4B3D29D04D5200067693 /* Sources */ = {
@@ -186,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -257,6 +326,7 @@
 		};
 		5BCF4B4929D04D5200067693 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44CB11E659922BA8D3859E95 /* Pods-GoogleSignIn-Carthage.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -268,6 +338,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +356,7 @@
 		};
 		5BCF4B4A29D04D5200067693 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B221D0279E38B02B31C956A9 /* Pods-GoogleSignIn-Carthage.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -296,6 +368,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

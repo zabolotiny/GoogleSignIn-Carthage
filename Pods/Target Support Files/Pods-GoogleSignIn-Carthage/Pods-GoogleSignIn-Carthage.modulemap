@@ -1,0 +1,6 @@
+framework module Pods_GoogleSignIn_Carthage {
+  umbrella header "Pods-GoogleSignIn-Carthage-umbrella.h"
+
+  export *
+  module * { export * }
+}
