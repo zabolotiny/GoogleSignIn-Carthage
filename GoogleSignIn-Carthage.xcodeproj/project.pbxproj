@@ -98,7 +98,6 @@
 				5BCF4B3D29D04D5200067693 /* Sources */,
 				5BCF4B3E29D04D5200067693 /* Frameworks */,
 				5BCF4B3F29D04D5200067693 /* Resources */,
-				5856808112674CCD56D96F26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,23 +151,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5856808112674CCD56D96F26 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleSignIn-Carthage/Pods-GoogleSignIn-Carthage-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F349428508DB17B6FED5B833 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

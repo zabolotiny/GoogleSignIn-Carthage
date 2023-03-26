@@ -1,0 +1,50 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "f253e38db3b51dd9c319a07bb0ccfbd133f42648",
+  "iOS" : [
+    {
+      "hash" : "99752e575cc078fadb85db035e378e1da67013adfb2cb3708658889f21878857",
+      "name" : "AppAuth",
+      "container" : "AppAuth.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "65a5ef06a396914de85efbe6027b0221c91cde44930488edbf4476f9fb82bc90",
+      "name" : "AppAuth",
+      "container" : "AppAuth.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "69ebee9183f85f7d5dc5faafebd81d6923b31ff1b4e949732fca62f5e70a59ba",
+      "name" : "GTMAppAuth",
+      "container" : "GTMAppAuth.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "aeae2d4dcb11988508eaa7fe513be7eda0b02fa118b3b7e4f68754263bd0c98f",
+      "name" : "GTMAppAuth",
+      "container" : "GTMAppAuth.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    },
+    {
+      "hash" : "44bb4dd5e0503046fca09b00bef1e1f383eb3c29d1443e7ec13eb0cdb239efeb",
+      "name" : "GTMSessionFetcher",
+      "container" : "GTMSessionFetcher.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "e419c6c5a41104cae696d3f42b5a3aa3fc0897e91e060068927f3680f67ac384",
+      "name" : "GTMSessionFetcher",
+      "container" : "GTMSessionFetcher.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
