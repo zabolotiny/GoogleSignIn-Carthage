@@ -5,5 +5,6 @@ target 'GoogleSignIn-Carthage' do
   use_frameworks!
   pod 'GoogleSignIn', '~> 7.0.0'
   pod 'GoogleToolboxForMac'
-  pod 'GoogleUtilitiesComponents'
+  pod 'GoogleUtilities', '7.11.0'
+  pod 'GoogleUtilitiesComponents', '1.1.0'
 end
